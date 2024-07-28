@@ -351,6 +351,20 @@ img {
   align-items: center;
 }
 
+.button--small{
+  padding-right: .75rem 1rem;
+}
+
+.button--link{
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover{
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
 /*==================== ABOUT ====================*/
 .about_img{
   width: 200px;
@@ -578,11 +592,72 @@ img {
 .qualification_active[data-content]{
   display: block;
 }
-/*==================== SERVICES ====================*/
 
+.qualifications_button{
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+.qualifications_button:hover .button_icon{
+  transform: translateX(.25rem);
+}
 
-/* Active Modal */
+.qualification_modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
 
+.qualification_modal_content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.qualification_modal_details{
+  row-gap: 1rem;
+}
+
+.qualification_modal_detail{
+  display: flex;
+}
+
+.qualification_modal_title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.qualification_modal_close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.qualification_modal_icon{
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
+
+/* active modal */
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
 
 /*==================== PORTFOLIO ====================*/
 
