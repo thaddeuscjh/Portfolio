@@ -593,6 +593,10 @@ img {
   display: block;
 }
 
+.qualification_tabs .qualification_active{
+  color: var(--first-color);
+}
+
 .qualifications_button{
   cursor: pointer;
   font-size: var(--small-font-size);
