@@ -6,14 +6,12 @@
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="docs/css/swiper-bundle.min.css">  
 
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="docs/css/styles.css">        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-
-
+         
         <title>ThadCJH</title>
     </head>
     <body>
@@ -25,31 +23,38 @@
                 <div class="nav_menu" id="nav_menu">
                     <ul class="nav_list grid">
                         <li class="nav_item">
-                            <a href="#home" class="nav_link"><i class="uil uil-estate nav_icon"></i>HOME</a>
+                            <a href="#home" class="nav_link active-link">
+                                <i class="uil uil-estate nav_icon"></i>HOME</a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#about" class="nav_link"><i class="uil uil-user nav_icon"></i>ABOUT</a>
+                            <a href="#about" class="nav_link">
+                                <i class="uil uil-user nav_icon"></i>ABOUT</a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#skills" class="nav_link"><i class="uil uil-file-alt nav_icon"></i>SKILLS</a>
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-file-alt nav_icon"></i>SKILLS</a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#qualification" class="nav_link"><i class="uil uil-briefcase-alt nav_icon"></i>QUALIFICATIONS</a>
+                            <a href="#qualification" class="nav_link">
+                                <i class="uil uil-briefcase-alt nav_icon"></i>QUALIFICATIONS</a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#blog" class="nav_link"><i class="uil uil-diary nav_icon"></i>BLOG</a>
+                            <a href="#blog" class="nav_link">
+                                <i class="uil uil-diary nav_icon"></i>BLOG</a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#testimonial" class="nav_link"><i class="uil uil-diary nav_icon"></i>TESTIMONIAL</a>
+                            <a href="#testimonial" class="nav_link">
+                                <i class="uil uil-diary nav_icon"></i>TESTIMONIAL</a>
                         </li>
 
                         <li class="nav_item">
-                            <a href="#contact" class="nav_link"><i class="uil uil-message nav_icon"></i>CONTACT</a>
+                            <a href="#contact" class="nav_link">
+                                <i class="uil uil-message nav_icon"></i>CONTACT</a>
                         </li>
                     </ul>
 
@@ -57,6 +62,9 @@
                 </div>
 
                 <div class="nav_button">
+                    <!-- Dark / Light Button -->
+                    <i class="uil uil-moon change_theme" id="theme-button"></i>
+                    
                     <div class="nav_toggle" id="nav_toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -140,7 +148,7 @@
                         <div class="about_details">
                             <h2>Hello, my name is Thaddeus</h2>
                             <p><b>AGE: </b>24</p>
-                            <p><b>LOCATION: </b>Singapore</p>
+                            <p><b>LOCATION: </b>Sweden born, Singapore grown</p>
                             <p><b>LANGUAGES: </b>English, Mandarin, German (A1.1), Korean (L1), French (Basic)</p>
                         </div>
                         <p class="about_description">
@@ -926,17 +934,79 @@
                 </div>
             </section>
             <!--==================== BLOG ====================-->
-            <!-- <section class="blog section" id="blog"> -->
+            <section class="blog section" id="blog">
+                <h2 class="section_title">BLOG</h2>
+                <span class="section_subtitle">My Collection of Memories<br>(content coming soon)</span>
                 
-            <!-- </section> -->
+                <div class="blog_container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== BLOG 1 ====================-->
+                        <div class="blog_content grid swiper-slide">
+                            <img src="docs/files/F22 Pilot (Blog).jpeg" alt="" class="blog_img">
+
+                            <div class="blog_data">
+                                <h3 class="blog_title">Pilot Post</h3>
+                                <p class="blog_description">A first blog to ...</p>
+                                <a href="#" class="button button--flex button--small blog_button">
+                                    Read More
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== BLOG 2 ====================-->
+                        <div class="blog_content grid swiper-slide">
+                            <img src="docs/files/NTU (blog).jpeg" alt="" class="blog_img">
+
+                            <div class="blog_data">
+                                <h3 class="blog_title">University Life</h3>
+                                <p class="blog_description">A walkthrough of my life in NTU (and some tips)</p>
+                                <a href="#" class="button button--flex button--small blog_button">
+                                    Read More
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--==================== BLOG 3 ====================-->
+                        <div class="blog_content grid swiper-slide">
+                            <img src="docs/files/loremargotme-restaurant.jpg" alt="" class="blog_img">
+
+                            <div class="blog_data">
+                                <h3 class="blog_title">Exchange in the UK</h3>
+                                <p class="blog_description">My semester abroad summarised!!</p>
+                                <a href="#" class="button button--flex button--small blog_button">
+                                    Read More
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper_blog_icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper_blog_icon"></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section" id="testimonial">
                 <h2 class="section_title">TESTIMONIAL</h2>
                 <span class="section_subtitle">From Employers</span>
 
-                <div class="testimonial_container container">
+                <div>
+                    <h1 style="color: var(--first-color); font-style: italic; text-align: center;">COMING SOON...</h1>
+                </div>
+                
+                <!-- <div class="testimonial_container container">
                     <div>
-                        <!--==================== TESTIMONIAL 1 ====================-->
+                        ==================== TESTIMONIAL 1 ====================
                         <div class="testimonial_content">
                             <div class="testimonial_data">
                                 <img src="" alt="" class="testimonial_img">
@@ -946,36 +1016,127 @@
                                     <span class="testimonial_client">Lecturer, Singapore Polytechnic</span>
                                 </div>
 
-                                <!-- for rating if needed -->
-                                <!-- <div>
+                                for rating if needed
+                                <div>
                                     <i class="uil uil-star testimonial_icon_star"></i>
                                     <i class="uil uil-star testimonial_icon_star"></i>
                                     <i class="uil uil-star testimonial_icon_star"></i>
                                     <i class="uil uil-star testimonial_icon_star"></i>
                                     <i class="uil uil-star testimonial_icon_star"></i>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
 
                         <p class="testimonial_desription">Provided good assistance in digitalisation & automation within the department.</p>
                     </div>
-                </div>
+                </div> -->
             </section>
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
-                
+                <h2 class="section_title">CONTACT ME</h2>
+                <span class="section_subtitle">Get in touch with me!</span>
+
+                <div class="contact_container container grid">
+                    <div>
+                        <div class="contact_information">
+                            <i class="uil uil-phone contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Mobile</h3>
+                                <span class="contact_subtitle">(+65) 9038 3966</span>
+                            </div>
+                        </div>
+
+                        <div class="contact_information">
+                            <i class="uil uil-envelope contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Email</h3>
+                                <span class="contact_subtitle">tchua013@e.ntu.edu.sg</span>
+                            </div>
+                        </div>
+
+                        <div class="contact_information">
+                            <i class="uil uil-map-marker contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Location</h3>
+                                <span class="contact_subtitle">Nanyang Technological University, Singapore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact_form grid">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label for="" class="contact_label">NAME</label>
+                                <input type="text" class="contact_input">
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">EMAIL</label>
+                                <input type="email" class="contact_input">
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">MESSAGE</label>
+                                <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                            </div>
+                            <div>
+                                <a href="#" class="button button--flex">
+                                    SEND
+                                    <i class="uil uil-message button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
+        <!--==================== FOOTER ====================-->
         <footer class="footer" id="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">THADDEUS CHUA</h1>
+                        <span class="footer_subtitle">Aerospace Undergraduate</span>
+                    </div>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#about" class="footer_link">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="footer_link">BLOG</a>
+                        </li>
+                            <a href="#contact" class="footer_link">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer_socials">
+                        <a href="https://www.instagram.com/th001211ad/" target="_blank" class="footer_social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/thaddeuscjh" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/thaddeuscjh" target="_blank" class="footer_social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <p class="footer_copy">&#169; Thaddeus Chua. All rights reserved.</p>
+                </div>
+            </div>
+
             <!--==================== SCROLL TOP ====================-->
-        
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class="uil uil-arrow-up scrollup_icon"></i>
+            </a>
+            <!--==================== SWIPER JS ====================-->
+            <script src="docs/js/swiper-bundle.min.js"></script>
+            
             <!--==================== MAIN JS ====================-->
             <script src="docs/js/main.js"></script>
-
-            <!--==================== SWIPER JS ====================-->
-            <script src=""></script>
-
 
         </footer>
     </body>
