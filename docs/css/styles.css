@@ -1155,6 +1155,16 @@ img {
     transform: translateX(-6rem);
   }
 
+  .about_details p{
+    text-align: left;
+  }
+
+  .about_container{
+    max-width: max-content;
+    width: 85%;
+    column-gap: 2rem;
+  }
+  
   .blog_content{
     column-gap: 5rem;
   }
